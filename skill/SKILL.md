@@ -7,11 +7,11 @@ description: "AI-assisted Figma design via figma-use CDP. Use when the user says
 
 Control Figma directly from Claude Code. No plugins, no tokens, no bridge. Just `fig` to start, `fig stop` when done. **macOS only.**
 
-figma-use (https://github.com/mds/figma-use) connects to Figma Desktop via Chrome DevTools Protocol (CDP). It gives Claude Code 118+ tools to read, write, query, lint, and render designs — including JSX rendering.
+figma-use (https://github.com/dannote/figma-use) connects to Figma Desktop via Chrome DevTools Protocol (CDP). It gives Claude Code 118+ tools to read, write, query, lint, and render designs — including JSX rendering.
 
-**Full documentation:** https://github.com/mds/figma-use/blob/master/README.md
-**Full command reference:** https://github.com/mds/figma-use/blob/master/REFERENCE.md
-**MCP setup:** https://github.com/mds/figma-use/blob/master/MCP.md
+**Full documentation:** https://github.com/dannote/figma-use/blob/master/README.md
+**Full command reference:** https://github.com/dannote/figma-use/blob/master/REFERENCE.md
+**MCP setup:** https://github.com/dannote/figma-use/blob/master/MCP.md
 
 If you don't know how to do something with figma-use, read the README above before guessing.
 
@@ -451,4 +451,4 @@ No plugins. No tokens. No bridge. Just CDP.
 | "Command not found: fig" | Run `source ~/.zshrc` or open a new terminal |
 | "Command not found: bun" | Run `curl -fsSL https://bun.sh/install | bash` then `source ~/.zshrc` |
 | Figma tools were working but stopped | Run `fig restart` — the MCP server may have died |
-| Need to find a specific tool | Check https://github.com/mds/figma-use/blob/master/REFERENCE.md |
+| Need to find a specific tool | Check https://github.com/dannote/figma-use/blob/master/REFERENCE.md |

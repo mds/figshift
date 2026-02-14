@@ -27,7 +27,7 @@ Set up my Mac so I can control Figma with AI. After setup, I should be able to t
 
 2. **Install figma-use CLI.** Run `npm install -g figma-use`.
 
-3. **Clone the figma-use repo.** The MCP server needs to run from source right now (packaging bug). If `~/figma-use` already exists, skip the clone and just run `cd ~/figma-use && git pull && bun install`. Otherwise run `git clone --depth 1 https://github.com/mds/figma-use.git ~/figma-use && cd ~/figma-use && bun install`.
+3. **Clone the figma-use repo.** The MCP server needs to run from source right now (packaging bug). If `~/figma-use` already exists, skip the clone and just run `cd ~/figma-use && git pull && bun install`. Otherwise run `git clone --depth 1 https://github.com/dannote/figma-use.git ~/figma-use && cd ~/figma-use && bun install`.
 
 4. **Add the `fig` command to my shell.** Check if a `fig()` function already exists in `~/.zshrc`. If it does, replace it. If not, append it. Here's the exact function to add:
 
@@ -124,13 +124,13 @@ After adding to `~/.zshrc`, run `source ~/.zshrc`.
 | "Command not found: fig" | Run `source ~/.zshrc` or open a new terminal |
 | "Command not found: bun" | Run `curl -fsSL https://bun.sh/install | bash` then `source ~/.zshrc` |
 | Figma tools were working but stopped | Run `fig restart` — the MCP server may have died |
-| Need to find a specific tool | Check https://github.com/mds/figma-use/blob/master/REFERENCE.md |
+| Need to find a specific tool | Check https://github.com/dannote/figma-use/blob/master/REFERENCE.md |
 
 **Important:**
 - This is macOS only
 - You do NOT need the official Figma MCP plugin or any other Figma bridge — this replaces all of them
-- Full tool documentation: https://github.com/mds/figma-use/blob/master/README.md
-- Full command reference: https://github.com/mds/figma-use/blob/master/REFERENCE.md
+- Full tool documentation: https://github.com/dannote/figma-use/blob/master/README.md
+- Full command reference: https://github.com/dannote/figma-use/blob/master/REFERENCE.md
 
 ## Safeguards
 

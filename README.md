@@ -2,7 +2,7 @@
 
 Control Figma with AI. One command to start, Claude Code does the rest.
 
-FigShift wraps [figma-use](https://github.com/mds/figma-use) with a clean setup experience, a Claude Code skill for ongoing design guidance, and a `fig` shell command for daily use. No plugins, no tokens, no bridge.
+FigShift wraps [figma-use](https://github.com/dannote/figma-use) with a clean setup experience, a Claude Code skill for ongoing design guidance, and a `fig` shell command for daily use. No plugins, no tokens, no bridge.
 
 ## What You Get
 
@@ -41,7 +41,7 @@ No Figma plugins. No personal access tokens. No bridge apps. Just CDP.
 2. Install figma-use and clone the repo:
 ```bash
 npm install -g figma-use
-git clone --depth 1 https://github.com/mds/figma-use.git ~/figma-use
+git clone --depth 1 https://github.com/dannote/figma-use.git ~/figma-use
 cd ~/figma-use && bun install
 ```
 
@@ -122,14 +122,14 @@ FigShift gives Claude Code **full read/write access** to your open Figma files. 
 
 ## Documentation
 
-- **figma-use README:** https://github.com/mds/figma-use/blob/master/README.md
-- **Full command reference (118+ tools):** https://github.com/mds/figma-use/blob/master/REFERENCE.md
-- **MCP server setup:** https://github.com/mds/figma-use/blob/master/MCP.md
-- **figma-use skill (upstream):** https://github.com/mds/figma-use/blob/master/SKILL.md
+- **figma-use README:** https://github.com/dannote/figma-use/blob/master/README.md
+- **Full command reference (118+ tools):** https://github.com/dannote/figma-use/blob/master/REFERENCE.md
+- **MCP server setup:** https://github.com/dannote/figma-use/blob/master/MCP.md
+- **figma-use skill (upstream):** https://github.com/dannote/figma-use/blob/master/SKILL.md
 
 ## Architecture
 
-FigShift is a UX layer on top of [figma-use](https://github.com/mds/figma-use). figma-use does the heavy lifting — 118+ MCP tools that control Figma via Chrome DevTools Protocol. FigShift adds:
+FigShift is a UX layer on top of [figma-use](https://github.com/dannote/figma-use). figma-use does the heavy lifting — 118+ MCP tools that control Figma via Chrome DevTools Protocol. FigShift adds:
 
 1. **Setup prompt** — one paste gets everything installed
 2. **Skill file** — ongoing guidance so Claude uses the tools well
@@ -160,7 +160,7 @@ FigShift is a UX layer on top of [figma-use](https://github.com/mds/figma-use). 
 | "Command not found: fig" | Run `source ~/.zshrc` or open a new terminal |
 | "Command not found: bun" | Run `curl -fsSL https://bun.sh/install | bash` then `source ~/.zshrc` |
 | Figma tools were working but stopped | Run `fig restart` — the MCP server may have died |
-| Need to find a specific tool | Check https://github.com/mds/figma-use/blob/master/REFERENCE.md |
+| Need to find a specific tool | Check https://github.com/dannote/figma-use/blob/master/REFERENCE.md |
 
 ## Known Issues
 
