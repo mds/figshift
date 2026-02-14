@@ -69,9 +69,9 @@ claude mcp list 2>&1 | grep -i figma
 ## Daily Use
 
 **Before each session:**
-- Make sure you're signed into Figma
-- If Figma is open, let saves finish first
-- Close Claude Code if it's already running — reopen it after `fig` starts
+- Make sure you're signed into your Figma account
+- If Figma is open, let any saves finish (Figma auto-saves to the cloud, but give it a moment) — `fig` will restart Figma if needed
+- Close Claude Code if it's already running (you'll reopen it after `fig`)
 
 **Start:**
 ```bash

@@ -91,9 +91,16 @@ After adding to `~/.zshrc`, run `source ~/.zshrc`.
 
 6. **Remove any conflicting Figma MCP servers.** Check `claude mcp list` for any existing Figma servers (like `figma-console` or `figma`). If found, remove them with `claude mcp remove <name> -s user` — figma-use replaces them.
 
-7. **Test it.** Run `fig` to start everything, then run `fig status` to confirm both show "on", then run `claude mcp list 2>&1 | grep figma-use` to confirm Claude Code sees it.
+7. **Install the Claude Code skill.** Download the FigShift skill file and place it in my Claude Code skills directory so Claude always has the inline tool reference, safeguards, and best practices loaded:
+```bash
+mkdir -p .claude/skills/fig
+curl -fsSL https://raw.githubusercontent.com/mds/figshift/master/skill/SKILL.md -o .claude/skills/fig/SKILL.md
+```
+If `.claude/skills/` doesn't exist in the current project, create it. The skill file gives Claude the full inline tool reference (118+ commands), JSX style shorthands, safeguards, and troubleshooting — so it never has to guess.
 
-8. **When done, tell me clearly:**
+8. **Test it.** Run `fig` to start everything, then run `fig status` to confirm both show "on", then run `claude mcp list 2>&1 | grep figma-use` to confirm Claude Code sees it.
+
+9. **When done, tell me clearly:**
 
 **Preflight checklist (every session, before typing `fig`):**
 - Make sure you're signed into your Figma account
