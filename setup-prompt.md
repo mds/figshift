@@ -124,6 +124,7 @@ After adding to `~/.zshrc`, run `source ~/.zshrc`.
 | "Command not found: fig" | Run `source ~/.zshrc` or open a new terminal |
 | "Command not found: bun" | Run `curl -fsSL https://bun.sh/install | bash` then `source ~/.zshrc` |
 | Figma tools were working but stopped | Run `fig restart` — the MCP server may have died |
+| Need to find a specific tool | Check https://github.com/mds/figma-use/blob/master/REFERENCE.md |
 
 **Important:**
 - This is macOS only
